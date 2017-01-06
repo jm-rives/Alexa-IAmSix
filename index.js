@@ -12,12 +12,12 @@
 var APP_ID = 'amzn1.ask.skill.dcaf3853-fc29-4618-954e-cce99bf96eb3';
 var AlexaSkill = require('./AlexaSkill');
 var SPEECH_OUTPUT = "Butz!...Butz! Butz! Butz!";
-var HelloAlexa = function() {
+var AlexaIsSix = function() {
   AlexaSkill.call(this, APP_ID);
 };
 
 
-HelloAlexa.prototype = Object.create(AlexaSkill.prototype);
+AlexaIsSix.prototype = Object.create(AlexaSkill.prototype);
 
 // how skill service handles requests from skill interface
 
@@ -25,16 +25,16 @@ var helloResponseFunction = function(intent, session, response) {
   response.tell(SPEECH_OUTPUT);
 };
 // onLaunch event handler
-HelloAlexa.prototype.eventHandlers.onLaunch = helloResponseFunction;
+AlexaIsSix.prototype.eventHandlers.onLaunch = helloResponseFunction;
 
 // intent handler
-HelloAlexa.prototype.intentHandlers = {
-  'HelloAlexaIntent' : helloResponseFunction
+AlexaIsSix.prototype.intentHandlers = {
+  'AlexaIsSixIntent' : helloResponseFunction
 };
 // AWS Lambda handler
 exports.handler = function(event, context) {
-  var helloAlexa = new HelloAlexa();
-  helloAlexa.execute(event, context);
+  var alexaIsSix = new AlexaIsSix();
+  alexaIsSix.execute(event, context);
 };
 
 
