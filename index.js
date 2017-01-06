@@ -9,7 +9,7 @@
 
 //  APP_ID came from https://developer.amazon.com/edw/home.html#/skill/amzn1.ask.skill.39466ef7-93a5-4b3e-9ab4-f9b55bbfb7bb/en_US/info
 
-var APP_ID = '#';
+var APP_ID = 'amzn1.ask.skill.dcaf3853-fc29-4618-954e-cce99bf96eb3';
 var AlexaSkill = require('./AlexaSkill');
 var SPEECH_OUTPUT = "Butz!...Butz! Butz! Butz!";
 var HelloAlexa = function() {

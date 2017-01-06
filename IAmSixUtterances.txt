@@ -1,0 +1,9 @@
+AlexaIsSixIntent say hello
+AlexaIsSixIntent say something
+AlexaIsSixIntent say hi
+AlexaIsSixIntent say hello world
+AlexaIsSixIntent hello
+AlexaIsSixIntent say hi world
+AlexaIsSixIntent hi
+AlexaIsSixIntent how are you
+AlexaIsSixIntent speak
